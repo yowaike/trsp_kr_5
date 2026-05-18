@@ -49,3 +49,15 @@ curl http://localhost:8000/tasks -H "X-User-Id: 10"
 ```json
 []
 ```
+
+## Пример состояния Docker
+
+```bash
+curl http://localhost:8000/health
+```
+
+Ожидаемый ответ:
+
+```json
+{"status":"ok","env":"docker"}
+```
